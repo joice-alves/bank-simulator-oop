@@ -14,15 +14,14 @@ public class Account {
 
     public void deposit (double value) {
         balance += value;
-        System.out.println("\nDeposit completed successfully!");
     }
 
-    public void withdrawal (double value) {
+    public boolean withdrawal (double value) {
         if (value <= balance) {
             balance -= value;
-            System.out.println("\nWithdrawal completed successfully!");
+            return true;
         } else {
-            System.out.println("\nWithdrawal not allowed. Insufficient balance!");
+            return false;
         }
     }
 
