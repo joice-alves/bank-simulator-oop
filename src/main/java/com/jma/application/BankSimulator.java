@@ -10,7 +10,7 @@ public class BankSimulator {
     public BankSimulator (String name, String idNumber, int accNumber, double currentBalance) {
         AccHolder holder = new AccHolder(name, idNumber);
         this.account = new Account(accNumber, holder, currentBalance);
-        System.out.println("Account current balance is $" + currentBalance + ".\n" + account);
+        System.out.println("Your account current balance is $" + currentBalance + ".\n" + account);
 
     }
 
