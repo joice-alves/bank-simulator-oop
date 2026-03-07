@@ -1,8 +1,8 @@
-package com.jmalves.bank_account;
+package com.jma.entities;
 
 public class Account {
     int accNumber;
-    private AccHolder accHolderName;
+    private final AccHolder accHolderName;
     double balance;
 
 
@@ -14,13 +14,15 @@ public class Account {
 
     public void deposit (double value) {
         balance += value;
+        System.out.println("\nDeposit completed successfully!");
     }
 
     public void withdrawal (double value) {
         if (value <= balance) {
             balance -= value;
+            System.out.println("\nWithdrawal completed successfully!");
         } else {
-            System.out.println("Withdrawal not allowed. Insufficient balance!");
+            System.out.println("\nWithdrawal not allowed. Insufficient balance!");
         }
     }
 

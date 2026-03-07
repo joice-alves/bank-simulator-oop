@@ -1,9 +1,9 @@
-package com.jmalves.bank_account;
+package com.jma.entities;
 
 public class AccHolder {
 
-    private String name;
-    private String idNumber;
+    private final String name;
+    private final String idNumber;
 
     public AccHolder (String name, String idNumber) {
         this.name = name;
