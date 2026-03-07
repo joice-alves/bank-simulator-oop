@@ -21,7 +21,7 @@ O projeto está organizado em pacotes para seguir as convenções de mercado:
 1. Certifique-se de ter o **JDK 17 ou superior** instalado.
 2. Clone o repositório:
    ```bash
-   git clone [https://github.com/joice-alves/bank-simulator-oop.git](https://github.com/joice-alves/bank-simulator-oop.git)
+   git clone git@github.com:joice-alves/bank-simulator-oop.git
 3. Compile e execute a classe BankSimulator.java.
 
 ## 💻 Exemplo de Saída
