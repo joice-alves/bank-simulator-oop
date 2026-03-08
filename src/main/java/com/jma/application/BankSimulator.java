@@ -15,13 +15,13 @@ public class BankSimulator {
     }
 
     public Account showAccountDeposit(double value) {
-        account.deposit(value);
+        Account.deposit(value);
         System.out.println("\nDeposit of $" + value + " successful!");
         return account;
     }
 
     public Account showAccountWithdrawal(double value) {
-        boolean success = account.withdrawal(value);
+        boolean success = Account.withdrawal(value);
 
         if (success) {
             System.out.println("\nWithdrawal of $" + value + " successful!");
@@ -35,6 +35,6 @@ public class BankSimulator {
         BankSimulator myBankSimulator = new BankSimulator("Maria Jose", "1789", 67342, 0);
 
         System.out.println(myBankSimulator.showAccountDeposit(700.5));
-        System.out.println(myBankSimulator.showAccountWithdrawal(300.76));
+        System.out.println(myBankSimulator.showAccountWithdrawal(800.76));
     }
 }
