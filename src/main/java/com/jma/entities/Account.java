@@ -3,20 +3,20 @@ package com.jma.entities;
 public class Account {
     int accNumber;
     private final AccHolder accHolderName;
-    double balance;
+    static double balance;
 
 
     public Account(int accNumber, AccHolder accHolderName, double currentBalance) {
         this.accNumber = accNumber;
         this.accHolderName = accHolderName;
-        this.balance = currentBalance;
+        balance = currentBalance;
     }
 
-    public void deposit (double value) {
+    public static void deposit (double value) {
         balance += value;
     }
 
-    public boolean withdrawal (double value) {
+    public static boolean withdrawal (double value) {
         if (value <= balance) {
             balance -= value;
             return true;
